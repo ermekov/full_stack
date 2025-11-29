@@ -4,6 +4,6 @@ from .models import Equipment
 
 @admin.register(Equipment)
 class EquipmentAdmin(admin.ModelAdmin):
-    list_display = ("id","name","price_per_day",'available_from', 'rating', 'created_at')
+    list_display = ("id","name","price_per_day",'available_from', 'created_at')
     search_fields = ("name", "description")
     list_filter = ("available_from",)
